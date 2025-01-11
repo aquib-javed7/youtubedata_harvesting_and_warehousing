@@ -1,5 +1,5 @@
 # youtubedata_harvesting_and_warehousing_using_streamlit_sql
-Youtube Data Harvesting and Warehousing
+**Youtube Data Harvesting and Warehousing**
 
 **Introduction:**
 This project involves building a data pipeline to harvest data from YouTube, store it in a SQL database, and create an interactive web application for data analysis using Streamlit. The main goals are to collect valuable YouTube data, store it efficiently, and visualize insights interactively.
