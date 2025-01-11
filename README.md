@@ -1,46 +1,41 @@
-# youtubedata_harvesting_and_warehousing_using_streamlit_sql
-**Youtube Data Harvesting and Warehousing**
+# Project1---YouTube-Data-Harvesting-and-Data-Warehousing
+This ETL project involves building a simple UI with Streamlit, retrieving data from the YouTube API, storing it in a MongoDB data lake, migrating it to a SQL data warehouse, querying the data warehouse with SQL, and displaying the data in the Streamlit app.
+## TOOLS USED:
 
-**Introduction:**
-This project involves building a data pipeline to harvest data from YouTube, store it in a SQL database, and create an interactive web application for data analysis using Streamlit. The main goals are to collect valuable YouTube data, store it efficiently, and visualize insights interactively.
+### Google API Client
+Google APIs give you programmatic access to Google Maps, Google Drive, YouTube, and many other Google products. To make coding against these APIs easier, Google provides client libraries that can reduce the amount of code you need to write and make your code more robust. In this project, GoogleApI client facilitates access to Youtube data like channel information, video details, comments etc. 
 
-**Project Overview:**
+### PYTHON LANGUAGE
+Python is a high-level, general-purpose programming language. Being easy to learn and understand, Python is used in this project for fetching the data using the Youtube API.
 
-Streamlit Application: A user-friendly UI built using Streamlit library, allowing users to interact with the application and perform data retrieval and analysis tasks.
-YouTube API Integration: Integration with the YouTube API to fetch channel and video data based on the provided channel ID.
-SQL Data Warehouse: Migration of data from the data lake to a SQL database, allowing for efficient querying and analysis using SQL queries.
+### Streamlit
+Streamlit is a free and open-source framework to rapidly build and share beautiful machine learning and data science web apps. It is a Python-based library specifically designed for machine learning engineers.
 
-**The following technologies are used in this project:**
+### MongoDB 
+MongoDB Compass, the GUI for MongoDB, is the easiest way to explore and manipulate your data. In this project, the data retrieved using the YouTube API is then stored to MongoDB using pymongo, a python Driver for MongoDB. The stored data can be viewed using the user-friendly MongoDB Compass.
 
-Python: The programming language used for building the application and scripting tasks.
-Streamlit: A Python library used for creating interactive web applications and data visualizations.
-YouTube API: Google API is used to retrieve channel and video data from YouTube.
-SQL (Postgresql): A relational database used as a data warehouse for storing migrated YouTube data.
-Pandas: A data manipulation library used for data processing and analysis.
+### POSTGRESQL
+PostgreSQL is an advanced relational database system.PostrgeSQL supports both relational (SQL) and non-relational (JSON) queries. In this project, the JSON data from MongoDB is migrated to POSTGRES.It provides an environment for storing and manipulating structured data with advanced SQL capabilities.
 
-**To run the YouTube Data Harvesting and Warehousing project, follow these steps:**
+### LIBRARIES REQUIRED
+1. googleapiclient
+2. pymongo
+3. psycopg2
+4. pandas
+5. streamlit
+6. isodate
 
-Install Python: Install the Python programming language on your machine.
-Install Required Libraries: Install the necessary Python libraries using pip or conda package manager. Required libraries include Streamlit, Pandas.
-Set Up Google API: Set up a Google API project and obtain the necessary API credentials for accessing the YouTube API.
-Configure Database: Set up a SQL database (Postgresql) for storing the data.
-Configure Application: Update the configuration file or environment variables with the necessary API credentials and database connection details.
-Run the Application: Launch the Streamlit application using the command-line interface.
-Usage
+### PROJECT FEATURES:
 
-**Once the project is setup and running, users can access the Streamlit application through a web browser. The application will provide a user interface where users can perform the following actions:**
+1. Ability to input a YouTube channel ID and retrieve all the relevant data (Channel name, subscribers, total video count, playlist ID, video ID, likes, dislikes,         comments of each video) using Google API.
+2. Option to store the data in a MongoDB database.
+3. Ability to collect data for different YouTube channels.
+4. Option to select a channel name and migrate its data from the data lake to a SQL database as tables.
+5. Ability to search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
 
-Enter a YouTube channel ID to retrieve data for that channel.
-Collect and store data for multiple YouTube channels in the data lake.
-Select a channel and migrate its data from the data lake to the SQL data warehouse.
-Search and retrieve data from the SQL database using various search options.
-Perform data analysis and visualization using the provided features.
-Features
 
-The YouTube Data Harvesting and Warehousing application offers the following features:
 
-Retrieval of channel and video data from YouTube using the YouTube API.
-Migration of data from the data lake to a SQL database for efficient querying and analysis.
-Search and retrieval of data from the SQL database using different search options, including joining tables.
-Support for handling multiple YouTube channels and managing their data.
-Future Enhancements
+
+
+
+ 
