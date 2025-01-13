@@ -23,7 +23,6 @@ PostgreSQL is an advanced relational database system.PostrgeSQL supports both re
 3. psycopg2
 4. pandas
 5. streamlit
-6. isodate
 
 ### PROJECT FEATURES:
 
